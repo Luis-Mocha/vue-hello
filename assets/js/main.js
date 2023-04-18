@@ -9,6 +9,8 @@ createApp({
             inputValue: '',
             count: "0",
             myClass: "text-primary",
+            imgPath: "",
+            showElement: "d-none"
         }
     },
     methods: {
@@ -20,6 +22,11 @@ createApp({
             else {
                 this.myClass = "text-primary"
             }
+        },
+
+        showPicture() {
+            this.showElement = "d-block"
+            this.imgPath = "https://picsum.photos/300/200"
         }
         
     }

@@ -27,7 +27,12 @@
         <button class="d-block my-4" @click="changeColor">Cambia colore</button>
         <button @click="count++">
             Count is: {{ count }}
-          </button>
+        </button>
+
+        <!-- Stampa immagine -->
+        <button @click="showPicture" class="d-block mx-auto my-3">Mostra una foto</button>
+
+        <img v-bind:src="imgPath" v-bind:class="showElement" alt="Foto Lorem picsum" class="mx-auto">
     </div>
 
     
